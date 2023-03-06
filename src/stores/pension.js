@@ -10,7 +10,12 @@ export const usePensionStore = defineStore("pension", () => {
 
   // 类似计算属性，可以惰性计算
   const report = computed(() => {
-    return {}
+    // TODO 需要一个退休金的计算方法
+    return {
+      monthlyDeposit: 1000,
+      totelDeposit: 1000,
+      monthlyAmount: 1000
+    }
   })
 
   return { currentAge, retirementAge, monthlyIncome, bankSavings, report };

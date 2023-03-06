@@ -10,10 +10,10 @@ const emit = defineEmits(["update:modelValue"]);
 </script>
 <template>
   <div class="inputbox" :id="id">
-    <div>
+    <div class="inputbox-label">
       <label>{{ label }}</label>
     </div>
-    <div>
+    <div class="inputbox-input">
       <input
         :type="type"
         :value="modelValue"
@@ -21,6 +21,7 @@ const emit = defineEmits(["update:modelValue"]);
       />
       <span>{{ unit }}</span>
     </div>
+    <div class="inputbox-tips"></div>
   </div>
 </template>
 <style scoped></style>

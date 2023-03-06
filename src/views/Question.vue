@@ -3,10 +3,13 @@ import inputbox from "@/components/inputbox.vue";
 import myButton from "@/components/my-button.vue";
 
 import { usePensionStore } from "@/stores/pension.js";
+import router from '@/router'
 
 const pensionStore = usePensionStore();
 
-function calculate() {}
+function calculate() {
+  router.replace("/report");
+}
 </script>
 <template>
   <inputbox
